@@ -1,3 +1,4 @@
+import 'package:ecommerce/screens/home/components/search_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ecommerce/constants.dart';
@@ -43,7 +44,10 @@ class HomeHeader extends StatelessWidget {
             width: 30,
             child: IconButton(
                 onPressed: () {
-                  Get.to(() => const SearchScreen());
+                  showSearch(
+                    context: context,
+                    delegate: CustomSearch(),
+                  );
                 },
                 icon: Center(
                   child: Icon(

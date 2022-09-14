@@ -1,3 +1,4 @@
+import 'package:ecommerce/screens/home/home_screen.dart';
 import 'package:get/get.dart';
 import 'package:ecommerce/Bindings/signUp_bindings.dart';
 import 'package:ecommerce/Bindings/sing_in_binding.dart';
@@ -14,6 +15,7 @@ class AppPages {
   static const signin = '/signIn';
   static const signup = '/singup';
   static const succse = '/succse';
+  static const home = '/home';
 
   static final routes = [
     GetPage(
@@ -33,6 +35,10 @@ class AppPages {
     GetPage(
       name: succse,
       page: () => LoginSuccessScreen(),
+    ),
+    GetPage(
+      name: home,
+      page: () => HomeScreen(),
     ),
   ];
 }

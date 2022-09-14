@@ -1,3 +1,4 @@
+import 'package:ecommerce/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
@@ -90,6 +91,7 @@ class _SignFormState extends State<SignForm> {
                 );
                 await _controller.logIn();
                 EasyLoading.showSuccess('Welcome!');
+                Get.toNamed(AppPages.home);
               }
             },
           ),

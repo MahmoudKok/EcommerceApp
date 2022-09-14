@@ -4,12 +4,14 @@ import 'package:get/get.dart';
 import 'package:ecommerce/routes/app_routes.dart';
 
 import 'package:ecommerce/theme.dart';
+import 'package:get_storage/get_storage.dart';
 
 import 'routes.dart';
 import 'screens/home/home_screen.dart';
 import 'screens/splash/splash_screen.dart';
 
-void main() {
+void main() async {
+  await GetStorage.init();
   runApp(MyApp());
 }
 
