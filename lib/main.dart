@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       // home: SplashScreen(),
       // We use routeName so that we dont need to remember the name
 
-      initialRoute: AppPages.INITIAL,
+      initialRoute: AppPages.home,
       getPages: AppPages.routes,
       builder: EasyLoading.init(),
     );
