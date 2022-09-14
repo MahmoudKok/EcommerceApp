@@ -9,17 +9,9 @@ import '../../models/category.dart';
 class HomeService {
   var url = Uri.parse(baseUrl + 'category/show');
   var url2 = Uri.parse(baseUrl + 'product/show');
-<<<<<<< HEAD
-  String token = GetStorage().read('token');
-  //'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY2MjczNjg4MywiZXhwIjoxNjYyNzQwNDgzLCJuYmYiOjE2NjI3MzY4ODMsImp0aSI6IkxUcG1ram5rTEVTWXE0SHQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Q9-OeA3lBNwABj0xiv4h1SnMQhFxTm27iz2m6t7nAZc';
-
-  getCategories() async {
-=======
   String token =
-'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY2MzA4ODg0NiwiZXhwIjoxNjYzMDkyNDQ2LCJuYmYiOjE2NjMwODg4NDYsImp0aSI6InRuWUljN3R0RVpwVTVWN3kiLCJzdWIiOjQsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-FTI2dErkwaEDvTcXjvXb9Pt_vpp6GShVsrcZEfXT9E';
-   getCategories() async {
-    
->>>>>>> f92700bcb80239e254aa1cb481ce172f5c7a9ed4
+      'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY2MzA4ODg0NiwiZXhwIjoxNjYzMDkyNDQ2LCJuYmYiOjE2NjMwODg4NDYsImp0aSI6InRuWUljN3R0RVpwVTVWN3kiLCJzdWIiOjQsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-FTI2dErkwaEDvTcXjvXb9Pt_vpp6GShVsrcZEfXT9E';
+  getCategories() async {
     var response = await http.get(url, headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json',

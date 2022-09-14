@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 import 'package:ecommerce/Bindings/details_binding.dart';
 import 'package:ecommerce/screens/details/details_screen.dart';
->>>>>>> f92700bcb80239e254aa1cb481ce172f5c7a9ed4
 import 'package:ecommerce/screens/home/home_screen.dart';
 import 'package:get/get.dart';
 import 'package:ecommerce/Bindings/signUp_bindings.dart';
@@ -21,10 +18,7 @@ class AppPages {
   static const signup = '/singup';
   static const succse = '/succse';
   static const home = '/home';
-<<<<<<< HEAD
-=======
   static const details = '/details';
->>>>>>> f92700bcb80239e254aa1cb481ce172f5c7a9ed4
 
   static final routes = [
     GetPage(
@@ -49,13 +43,10 @@ class AppPages {
       name: home,
       page: () => HomeScreen(),
     ),
-<<<<<<< HEAD
-=======
     GetPage(
       name: details,
       page: () => DetailsScreen(),
       binding: DetailsBinding(),
     ),
->>>>>>> f92700bcb80239e254aa1cb481ce172f5c7a9ed4
   ];
 }
